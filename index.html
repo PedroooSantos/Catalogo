@@ -33,8 +33,7 @@
                 </nav>
                 <!--FIM MENU NAVEGAÇÃO TOPO SITE-->
 
-                <img src="assets/img/menu.png" alt="" class="menu-celular" onclick="menucelular()">
-
+                <img src="assets/img/menu.png" class="menu-celular" onclick="menucelular()">
 
             </div>
             <!--FIM NAVEGAÇÃO TOPO SITE-->
@@ -222,6 +221,23 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
     <script src="assets/js/app.js"></script>
+    
+<script>
+function menucelular() {
+    const menu = document.getElementById("MenuItens");
+    const icone = document.querySelector(".menu-celular");
+
+    if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
+        menu.style.maxHeight = "200px";
+        icone.style.display = "none";
+    } else {
+        menu.style.maxHeight = "0px";
+        icone.style.display = "block";
+    }
+}
+</script>
+
+
 </body>
 
 
