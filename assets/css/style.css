@@ -121,8 +121,13 @@
 .col-4 h4 {
     text-align: center;
 }
+.col-4 h2 {
+    text-align: center;
+}
 
-
+.col-4 p {
+    text-align: center;
+}
 
  .btn {
   background-color: #7a1c1c;
@@ -174,7 +179,7 @@
 
  .col-4 {
      flex-basis: 25%;
-     min-width: 200px;
+     min-width: 230px;
      padding: 10px;
      margin-bottom: 50px;
      transition: transform 0.5s;
@@ -215,8 +220,18 @@
      font-weight: normal;
  }
 
+h2 {
+     color: var(--cor-btn-corpo);
+     font-weight: normal;
+ }
+
  .col-4 p {
      font-size: 14px;
+ }
+
+p {
+     color: var(--cor-btn-corpo);
+     font-weight: normal;
  }
 
  .Classificacao {
