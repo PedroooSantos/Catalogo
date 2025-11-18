@@ -84,9 +84,8 @@
  }
 
  nav ul li a {
-    font-size: 18px;
-    font-weight: 500;
-    color: #2a2a2a;
+    color: var(--cor-fonte);
+    font-size: 20px;
  }
 
  nav ul li a:hover {
@@ -241,9 +240,10 @@ p {
  
 
  .menu-celular{
-    width: 28px;
-    margin-left: 20px;
-    display: none;
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        z-index: 1000;
  }
 
   /*----------- Listagem de Produtos---------*/
@@ -264,17 +264,18 @@ p {
         position: absolute;
         top: 70px;
         left: 0;
-        background: #8f2727;
         width: 100%;
+        background: white;
+        text-align: left;
+        padding-left: 20px;
+        max-height: 0px;      /* INICIAL FECHADO */
         overflow: hidden;
-        transition: max-height 0.5s;
+        transition: max-height 0.4s ease;
     }
 
  nav ul li{
-     display: block;
-     margin-top: 10px;
-     margin-right: 50px;
-     margin-bottom: 10px;
+     display: block; 
+     margin: 15px 0;
  }
 
  nav ul li{
@@ -341,4 +342,13 @@ p {
 .categorias-produtos button:hover {
     background: var(--cor-btn-hover);
     color: var(--cor-btn-fonte);
+}
+
+@media only screen and (min-width:801px){
+    #MenuItens {
+        max-height: none !important;
+    }
+    .menu-celular {
+        display: none !important;
+    }
 }
